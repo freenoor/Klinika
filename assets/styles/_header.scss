@@ -1,0 +1,149 @@
+header{
+    .menu-here{
+        nav{
+        display: flex;
+        justify-content: space-between;
+        @media(max-width: 575.98px){
+            padding: 10px 0;
+        }
+        .logo_header{
+            background-image: url(../../assets/img/klinika-logo.svg);
+            width: 220px;
+            height: 90px;
+            background-repeat: no-repeat;
+            background-size: contain;
+            @media(max-width: 991.98px){
+                width: 185px;
+                height: 75px;
+            }
+            @media(max-width: 575.98px){
+                width: 145px;
+                height: 55px;
+            }
+            @media(max-width: 420px){
+                height: 50px;
+            }
+        }
+        .right_headers{
+            display: flex;
+            @media(max-width: 767.98px){
+                display: block;
+                }
+            .angebot__unv{
+                display: flex;
+                align-items: center;
+                margin-left: 25px;
+                @media(max-width: 991.98px){
+                    margin-left: 20px;
+                    }
+                    @media(max-width: 767.98px){
+                    margin-left: 0;
+                    margin-top: 5px;
+                    }
+                    @media(max-width: 575.98px){
+                        margin-top: 0;
+                    }
+                a{
+                    font-size: 20px;
+                    font-family: Sofia Pro-R;
+                    overflow: hidden;
+                    position: relative;
+                    color: #fff ;
+                    background-color: transparent ;
+                    padding: 0.75rem 1.75rem ;
+                    z-index: 1;
+                    border-radius: 32px;
+                    @media(max-width: 991.98px){
+                        padding: 0.55rem 1.15rem;
+                        font-size: 18px;
+                            }
+                            @media(max-width: 767.98px){
+                                font-size: 18px;
+                            }
+                            @media(max-width: 420px){
+                                font-size: 14px;
+                                padding: 5px 10px;
+                            }
+                    &:hover{
+                        &::after{
+                            width: 100%;
+                        }
+                    }
+                    &:after{
+                        width: 0;
+                        content: "";
+                        background-color: #979075;
+                        top: 0;
+                        height: 100%;
+                        left: 0;
+                        position: absolute;
+                        display: block;
+                        -webkit-transition: all .3s ease;
+                        transition: all .3s ease;
+                        z-index: -1;
+                    }
+                    &:before{
+                        content: "";
+                        background-color: #64666b;
+                        top: 0;
+                        height: 100%;
+                        left: 0;
+                        position: absolute;
+                        display: block;
+                        -webkit-transition: all .3s ease;
+                        transition: all .3s ease;
+                        z-index: -1;
+                        width: 100%;
+                    }
+                }
+            }
+        .number__contact{
+            display: flex;
+            @media(max-width: 767.98px){
+                justify-content: center;
+            }
+            @media(max-width: 575.98px){
+            display: none;
+            }
+            &:hover{
+                section{
+                    &:nth-child(1){
+                        transition-duration: .3s;
+                        transform: rotate(360deg)!important;
+                            -webkit-transform: rotate(360deg)!important;
+                            -moz-transform: rotate(360deg)!important;
+                            -ms-transform: rotate(360deg)!important;
+                            -o-transform: rotate(360deg)!important;
+                    }}
+            }
+            .widget_text{
+                display: flex;
+                align-items: center;
+                
+                svg{
+                    height: 28px;
+                    width: 28px;
+                    margin-right: .7rem;
+                    @media(max-width: 420px){
+                        height: 25px;
+                        width: 25px;
+                    }
+                }
+                a{
+                    color: #64666B;
+                    font-size: 24px;
+                    letter-spacing: 0;
+                    font-family: Sofia Pro-R;
+                    @media(max-width: 991.98px){
+                        font-size: 20px;
+                        }
+                        @media(max-width: 470px){
+                            font-size: 17px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

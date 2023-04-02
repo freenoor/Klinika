@@ -1,0 +1,33 @@
+.site-footer{
+    background-color: #64666B;
+    padding: 30px 0px 25px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .roww{
+        display: flex;
+        justify-content: space-between;
+        @media(max-width: 575.98px){
+            display: block;
+            text-align: center;
+        }
+    .right-butt{
+        display: flex;
+        @media(max-width: 575.98px){
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+        h2, h3{
+            font-size: 18px;
+            font-family: Sofia Pro-R;
+            color: white;
+            padding-left: 30px;
+            margin: 0;
+        }
+    }
+    p{
+        color: white;
+        margin: 0;
+    }
+}
+}
